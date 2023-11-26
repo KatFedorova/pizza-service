@@ -1,0 +1,13 @@
+server:
+  port: 8057
+spring:
+  kafka:
+    bootstrap-servers: localhost:29092
+    template:
+      default-topic: orderState
+      consumer:
+        group-id: KitchenGroupId
+        auto-offset-reset: latest
+logging:
+  level:
+    root: info
