@@ -1,0 +1,10 @@
+server:
+  port: 8056
+spring:
+   kafka:
+      bootstrap-servers: 'localhost:29092'
+      template:
+        default-topic: 'orderState'
+logging:
+  level:
+    root: info
