@@ -19,7 +19,7 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class KafkaConfiguration {
     @Value("${spring.kafka.bootstrap-servers}")
-    private final String kafkaBootstrapServers = "localhost:29092";
+    private String kafkaBootstrapServers;
 
     // Настройка фабрики продюсера Kafka
     @Bean
